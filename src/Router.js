@@ -1,17 +1,20 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Home from './Home'; 
-import About from './About'; 
-import NotFound from './NotFound'; 
+import Layout from "./layout/layout"; 
+import Home from './pages/Home/Home'; 
+import About from './pages/About/About'; 
+import NotFound from './pages/NotFound/NotFound'; 
 
 const AppRouter = () => {
   return (
     <Router>
-      <Routes>
-        <Route path="/" element={<Home />} /> {/* Utilisez 'element' au lieu de 'component' */}
-        <Route path="/about" element={<About />} />
-        <Route path="*" element={<NotFound />} /> {/* Route pour gérer les pages non trouvées */}
-      </Routes>
+      <Layout> 
+        <Routes>
+          <Route path="/" element={<Home />} /> 
+          <Route path="/about" element={<About />} />
+          <Route path="*" element={<NotFound />} /> 
+        </Routes>
+      </Layout>
     </Router>
   );
 };
