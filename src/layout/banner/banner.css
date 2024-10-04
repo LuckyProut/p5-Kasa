@@ -1,0 +1,28 @@
+#banner {
+    height: 223px;
+    width: 1240px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+#banner img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+#banner p {
+    position: absolute;
+    top: 180px;
+    font-size: 48px;
+    font-family: Montserrat;
+    font-weight: 700;
+    color: white;
+    text-shadow: 
+    -1px -1px 0px black, /* Ombre en haut à gauche */
+    1px -1px 0px black,  /* Ombre en haut à droite */
+    -1px 1px 0px black,  /* Ombre en bas à gauche */
+    1px 1px 0px black; 
+}
