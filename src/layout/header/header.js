@@ -1,5 +1,5 @@
 import React from "react";
-import "./header.css";
+import "./header.scss";
 import logoHeader from "../../img/Logo.png";
 import { NavLink } from "react-router-dom";
 
