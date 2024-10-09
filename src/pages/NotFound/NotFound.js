@@ -1,7 +1,10 @@
 import React from 'react';
+import Error from '../../components/error/error';
 
 const NotFound = () => {
-  return <h1>404 - Page non trouvée</h1>;
+  return (
+    <Error />
+  );
 };
 
 export default NotFound;
