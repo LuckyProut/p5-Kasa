@@ -1,0 +1,30 @@
+.error-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+}
+
+.error-number {
+    font-size: 288px;
+    font-weight: 700;
+    color: #ff6060;
+    font-family: Montserrat;
+    margin: 0;
+}
+
+.error-text {
+    color: #ff6060;
+    font-family: Montserrat;
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.error-home {
+    color: black;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 500;
+    border-bottom: solid 1px black;
+    margin-bottom: 100px;
+}
