@@ -7,10 +7,10 @@ function Card({ title, cover }) {
         <section className='location-background'>
          {Data.map((location) => (
             <Link to={`/location/${location.id}`} key={location.id} >
-               <figure className='location-card'>
-                  <img className='location-image' src={location.cover} alt={location.title}/>
-                  <div className='card-shadow'></div>          
-                  <figcaption className='location-title'>{location.title}</figcaption>
+               <figure className='location__card'>
+                  <img className='location__image' src={location.cover} alt={location.title}/>
+                  <div className='location__card__shadow'></div>          
+                  <figcaption className='location__title'>{location.title}</figcaption>
                </figure>
             </Link>
          ))}

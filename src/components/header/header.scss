@@ -1,10 +1,10 @@
 .header-container {
-  max-width: 1240px; // Limite la largeur à 1240px
+  max-width: 1240px; 
   max-height: 68px;
-  margin: 0 auto;    // Centre le header horizontalement
-  display: flex;     // Utilise flexbox pour aligner le contenu
-  align-items: center; // Aligne verticalement l'image et la nav
-  justify-content: space-between; // Espacement entre l'image et la nav
+  margin: 0 auto;   
+  display: flex;     
+  align-items: center; 
+  justify-content: space-between;
   padding-bottom: 45px;
 
   img {
