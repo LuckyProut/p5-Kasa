@@ -1,14 +1,10 @@
 import { useState, useRef, useEffect } from "react";
 import './collapse.scss'
 import arrowUp from "../../img/arrowup.png"
-import Data from '../../data/information.json'
 
 
-
-
-const Collapse = ({ title, content }) => {
+const Collapse = ({ data }) => {
   const [openStates, setOpenStates] = useState([]);
-
   const contentRefs = useRef([]);
 
   const display = (index) => {
@@ -31,7 +27,7 @@ const Collapse = ({ title, content }) => {
 
   return (
     <section className='collapse-background'>
-      {Data.map(({ title, content }, index) => (
+      {data.map(({ title, content }, index) => (
         <div key={index} className="collapse__dropdown__container">
           <div className="collapse__dropdown__title">
             <h2>{title}</h2>
