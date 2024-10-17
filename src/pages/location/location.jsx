@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import Data from '../../data/data.json';
 import Collapse from '../../components/collapse/collapse';
 import Rating from '../../components/rating/rating';
+import Host from '../../components/host/host';
 import Tags from '../../components/tag/tag';
 import { useNavigate } from 'react-router-dom';
 import { useEffect } from 'react';
@@ -18,7 +19,7 @@ function Annonces() {
         }
     }, [location, navigate]);
 
-    const { description, equipments } = location; 
+    const { description, equipments, host } = location; 
 
     return (
         <>
@@ -27,6 +28,9 @@ function Annonces() {
                 <h2 className='announcement__location'>{location.location}</h2>
                 <Rating className='announcement__rating' score={location.rating}/>
                 <Tags className='announcement__tag' tags={location.tags}/>
+                <Host
+                name={host.name}
+                picture={host.picture} />
             </section>
             <div className='collapse'>
             <Collapse className='collapse__box' title="Description">
