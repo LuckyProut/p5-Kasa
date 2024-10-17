@@ -1,4 +1,5 @@
 import { useState, useRef, useEffect } from "react";
+import './collapse.scss'
 
 import icon from "../../img/arrowup.png";
 

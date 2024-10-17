@@ -4,7 +4,7 @@ import starInactive from "../../img/starinactive.png";
 
 
 function Rating(props) {
-    const rating = props.rating; // renommé en "rating"
+    const rating = props.rating;
     const notes = [1, 2, 3, 4, 5];
     return (
       <div className="rating__contenair">

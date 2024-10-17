@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import Data from '../../data/data.json';
 import Collapse from '../../components/collapse/collapse';
 import Rating from '../../components/rating/rating';
+import Tags from '../../components/tag/tag';
 import { useNavigate } from 'react-router-dom';
 import { useEffect } from 'react';
 
@@ -24,7 +25,8 @@ function Annonces() {
             <section className='announcement'>
                 <h1 className='announcement__title'>{location.title}</h1>
                 <h2 className='announcement__location'>{location.location}</h2>
-                <Rating score={location.rating}/>
+                <Rating className='announcement__rating' score={location.rating}/>
+                <Tags className='announcement__tag' tags={location.tags}/>
             </section>
             <div className='collapse'>
             <Collapse className='collapse__box' title="Description">
