@@ -14,11 +14,11 @@ const Collapse = ({ title, children }) => {
 
   return (
     <div className="collapse">
-      <button className="collapse__button" onClick={toggleCollapse}>
+      <button className="collapse__button &--small" onClick={toggleCollapse}>
         {title}
         <img src={icon} className={isOpen ? 'rotated' : ''} alt="collapse icon" />
       </button>
-      <div className={`collapse__content ${isOpen ? 'show' : ''}`}>
+      <div className={`collapse__content &--small ${isOpen ? 'show' : ''}`}>
         {children}
       </div>
     </div>

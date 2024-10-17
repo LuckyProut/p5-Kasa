@@ -8,11 +8,10 @@ $text-color-black: black;
   flex-direction: column;
   width: 100%;
   margin: 20px 0;
-  align-items: center; 
+  align-items: center;
 
   &__button {
     padding: 0.5em 1em;
-    min-width: 1023px;
     min-height: 52px;
     background-color: $primary-color;
     color: $text-color-white;
@@ -24,6 +23,7 @@ $text-color-black: black;
     align-items: center;
     font-family: Montserrat;
     border-style: none;
+    width: 100%; /* Make the button take the full width of the collapse box */
 
     img {
       transition: transform 0.3s ease;
@@ -44,8 +44,8 @@ $text-color-black: black;
     justify-content: center;
     color: $text-color-black;
     margin: 0;
-    min-width: 1023px;
-    max-width: 1023px;
+    min-width: 100%; /* Use 100% to ensure it uses the full width of the collapse box */
+    max-width: 100%;
     background-color: $background-color;
     font-family: Montserrat;
     font-size: 18px;
@@ -54,4 +54,8 @@ $text-color-black: black;
       max-height: 500px; 
     }
   }
+
+
 }
+
+

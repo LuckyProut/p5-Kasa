@@ -9,6 +9,7 @@ import Rating from '../../components/rating/rating';
 import Host from '../../components/host/host';
 import Tags from '../../components/tag/tag';
 import Gallery from '../../components/gallery/gallery';
+import './location.scss';
 
 
 function Annonces() {
@@ -27,18 +28,22 @@ function Annonces() {
     return (
         <>
             <section className='announcement'>
-                <Gallery pictures={location.pictures} title={location.title} />
-                <NameLocation title={location.title} location={location.location} />
-                <Tags className='announcement__tag' tags={location.tags}/>
-                <Rating className='announcement__rating' score={location.rating}/>
-                <Host
-                name={host.name}
-                picture={host.picture} />
-            <div className='collapse'>
-            <Collapse className='collapse__box' title="Description">
+                <Gallery className='annoucement__gallery' pictures={location.pictures} title={location.title} />
+                <div className='announcement__details'>
+                    <div className='announcement__left'>
+                        <NameLocation title={location.title} location={location.location} />
+                        <Tags className='announcement__tag' tags={location.tags}/>
+                    </div>
+                    <div className='announcement__right'>
+                        <Host name={host.name} picture={host.picture} />
+                        <Rating className='announcement__rating' score={location.rating}/>
+                    </div>
+                </div>
+            <div className='collapse__container'>
+            <Collapse className='collapse__box collapse--small' title="Description">
                 <p>{description}</p>
             </Collapse>
-            <Collapse className='collapse__box' title="Équipements">
+            <Collapse className='collapse__box collapse--small' title="Équipements">
                 <ul className="equipments-content">
                     {equipments.map((equipment, index) => (
                         <li key={index}>{equipment}</li>
