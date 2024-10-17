@@ -4,7 +4,7 @@ import './host.scss'
 function Host(props) {
     return (
       <>
-    <div div className='host__container'>
+    <div className='host__container'>
         <p className="host__name">{props.name}</p>
         <img
           className="host__picture"

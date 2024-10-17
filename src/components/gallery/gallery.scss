@@ -1,0 +1,47 @@
+$gallery-margin: 20px;
+$image-height: 415px;
+$button-size: 10px;
+
+.gallery {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: $gallery-margin 0;
+
+  &__image {
+    min-width: 100%;
+    height: $image-height;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  &__button {
+    position: absolute; 
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+
+    &--left {
+      left: $button-size;
+    }
+
+    &--right {
+      right: $button-size; 
+    }
+  }
+
+  .image__counter {
+    margin-top: 10px; 
+    font-size: 18px; 
+    font-weight: 500;
+    font-family: Montserrat;
+    color: white; 
+    text-align: center; 
+    position: absolute;
+    bottom: 10px; 
+    left: 50%;
+    transform: translateX(-50%); 
+  }
+}

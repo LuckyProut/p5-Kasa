@@ -5,10 +5,10 @@ $text-color-black: black;
 
 .collapse {
   display: flex;
-  flex-direction: column; // Modifié pour que les enfants s'affichent en colonne
+  flex-direction: column;
   width: 100%;
   margin: 20px 0;
-  align-items: center; // Centre les éléments
+  align-items: center; 
 
   &__button {
     padding: 0.5em 1em;
