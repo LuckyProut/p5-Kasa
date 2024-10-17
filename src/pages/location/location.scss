@@ -22,11 +22,15 @@
     display: flex;
     justify-content: space-between; /* Pour espacer les collapses à gauche et à droite */
     align-items: flex-start; /* Aligne les collapses en haut */
+    gap: 76px;
 }
 
-.collapse__box {
-    width: 582px; /* Largeur fixe pour chaque collapse */
-    margin-bottom: 20px; /* Espace en bas des collapses */
-    box-sizing: border-box; /* Assure que la largeur inclut le padding et les bordures */
+ul {
+    list-style: none;
 }
+
+.equipments-content {
+    text-align: start;
+}
+
 

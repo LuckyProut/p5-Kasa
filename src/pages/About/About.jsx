@@ -3,6 +3,7 @@ import Banner from '../../components/banner/banner';
 import Collapse from '../../components/collapse/collapse';
 import bannerImg from "../../img/bannerImg2.jpg"
 import Data from '../../data/information.json'
+import './about.scss'
 
 
 const About = () => {

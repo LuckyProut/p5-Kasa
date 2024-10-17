@@ -4,11 +4,8 @@ $text-color-white: white;
 $text-color-black: black;
 
 .collapse {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
+  width: 1023px;
   margin: 20px 0;
-  align-items: center;
 
   &__button {
     padding: 0.5em 1em;
@@ -16,7 +13,6 @@ $text-color-black: black;
     background-color: $primary-color;
     color: $text-color-white;
     font-size: 24px;
-    margin: 1.5em auto 0;
     border-radius: 10px;
     display: flex;
     justify-content: space-between;
@@ -41,7 +37,6 @@ $text-color-black: black;
     max-height: 0; 
     display: flex;
     align-items: center;
-    justify-content: center;
     color: $text-color-black;
     margin: 0;
     min-width: 100%; /* Use 100% to ensure it uses the full width of the collapse box */
