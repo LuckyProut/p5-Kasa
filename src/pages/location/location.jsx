@@ -2,6 +2,7 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import Data from '../../data/data.json';
 import Collapse from '../../components/collapse/collapse';
+import NameLocation from '../../components/namelocation/namelocation';
 import Rating from '../../components/rating/rating';
 import Host from '../../components/host/host';
 import Tags from '../../components/tag/tag';
@@ -24,8 +25,7 @@ function Annonces() {
     return (
         <>
             <section className='announcement'>
-                <h1 className='announcement__title'>{location.title}</h1>
-                <h2 className='announcement__location'>{location.location}</h2>
+                <NameLocation title={location.title} location={location.location} />
                 <Rating className='announcement__rating' score={location.rating}/>
                 <Tags className='announcement__tag' tags={location.tags}/>
                 <Host
