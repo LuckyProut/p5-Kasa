@@ -1,0 +1,57 @@
+$primary-color: #FF6060;
+$background-color: #F6F6F673;
+$text-color-white: white;
+$text-color-black: black;
+
+.collapse {
+  display: flex;
+  flex-direction: column; // Modifié pour que les enfants s'affichent en colonne
+  width: 100%;
+  margin: 20px 0;
+  align-items: center; // Centre les éléments
+
+  &__button {
+    padding: 0.5em 1em;
+    min-width: 1023px;
+    min-height: 52px;
+    background-color: $primary-color;
+    color: $text-color-white;
+    font-size: 24px;
+    margin: 1.5em auto 0;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Montserrat;
+    border-style: none;
+
+    img {
+      transition: transform 0.3s ease;
+
+      &.rotated {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  &__content {
+    border-radius: 5px;
+    overflow: hidden; 
+    transition: max-height 0.5s ease; 
+    max-height: 0; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $text-color-black;
+    margin: 0;
+    min-width: 1023px;
+    max-width: 1023px;
+    background-color: $background-color;
+    font-family: Montserrat;
+    font-size: 18px;
+
+    &.show {
+      max-height: 500px; 
+    }
+  }
+}
