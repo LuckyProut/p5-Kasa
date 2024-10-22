@@ -1,3 +1,5 @@
+@import 'variables';
+
 .host__container {
     display: flex;
     flex-direction: row;
@@ -13,8 +15,8 @@
     text-align: end;
     width: 93px;
     height: 52px;
-    font-family: Montserrat;
-    color: #FF6060;
+    font-family: $font-family;
+    color: $primary-color;
     font-size: 18px;
     font-weight: 500;
     line-height: 25px;

@@ -1,5 +1,5 @@
 import React from 'react';
-import './namelocation.scss'
+import '../../style/namelocation.scss'
 
 const NameLocation = ({ title, location }) => {
     return (

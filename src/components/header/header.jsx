@@ -1,14 +1,14 @@
 import React from "react";
-import "./header.scss";
+import "../../style/header.scss";
 import logoHeader from "../../img/Logo.png";
 import { NavLink } from "react-router-dom";
 
 function Header() {
     return(
         <header id="header" className="header-container">
-            <NavLink to="/Home"><img src={logoHeader} alt="Logo"/></NavLink>
+            <NavLink to="/"><img src={logoHeader} alt="Logo"/></NavLink>
             <nav>
-                <NavLink to="/Home" className="lien-site lien-menu">Accueil</NavLink>
+                <NavLink to="/" className="lien-site lien-menu">Accueil</NavLink>
                 <NavLink to="/About" className="lien-site lien-menu">A propos</NavLink>
             </nav>
         </header>

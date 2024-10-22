@@ -1,8 +1,4 @@
-$primary-color: #FF6060;
-$background-color: #F6F6F673;
-$text-color-white: white;
-$text-color-black: black;
-
+@import 'variables';
 .collapse {
   width: 1023px;
   margin: 20px 0;
@@ -17,9 +13,9 @@ $text-color-black: black;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-family: Montserrat;
+    font-family: $font-family;
     border-style: none;
-    width: 100%; /* Make the button take the full width of the collapse box */
+    width: 100%; 
 
     img {
       transition: transform 0.3s ease;
@@ -39,10 +35,10 @@ $text-color-black: black;
     align-items: center;
     color: $text-color-black;
     margin: 0;
-    min-width: 100%; /* Use 100% to ensure it uses the full width of the collapse box */
+    min-width: 100%;
     max-width: 100%;
     background-color: $background-color;
-    font-family: Montserrat;
+    font-family: $font-family;
     font-size: 18px;
 
     &.show {

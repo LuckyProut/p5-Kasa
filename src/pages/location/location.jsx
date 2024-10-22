@@ -2,6 +2,7 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import { useEffect } from 'react';
+// import { Link } from 'react-router-dom'
 import Data from '../../data/data.json';
 import Collapse from '../../components/collapse/collapse';
 import NameLocation from '../../components/namelocation/namelocation';
@@ -9,7 +10,7 @@ import Rating from '../../components/rating/rating';
 import Host from '../../components/host/host';
 import Tags from '../../components/tag/tag';
 import Gallery from '../../components/gallery/gallery';
-import './location.scss';
+import '../../style/location.scss';
 
 
 function Annonces() {
@@ -22,6 +23,8 @@ function Annonces() {
             navigate('/NotFound');
         }
     }, [location, navigate]);
+    if (!location) return null;
+
 
     const { description, equipments, host } = location; 
 
@@ -39,18 +42,18 @@ function Annonces() {
                         <Rating className='announcement__rating' score={location.rating}/>
                     </div>
                 </div>
-            <div className='collapse__container'>
-            <Collapse className='collapse__box collapse--small' title="Description">
-                <p>{description}</p>
-            </Collapse>
-            <Collapse className='collapse__box collapse--small' title="Équipements">
-                <ul className="equipments-content">
-                    {equipments.map((equipment, index) => (
+                <div className='collapse__container'>
+                <Collapse className='collapse__box collapse--small' title="Description">
+                    <p>{description}</p>
+                </Collapse>
+                <Collapse className='collapse__box collapse--small' title="Équipements">
+                    <ul className="equipments-content">
+                        {equipments.map((equipment, index) => (
                         <li key={index}>{equipment}</li>
-                    ))}
-                </ul>
-            </Collapse>
-            </div>
+                        ))}
+                    </ul>
+                </Collapse>
+                </div>
             </section>
         </>
     );

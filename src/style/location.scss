@@ -20,8 +20,8 @@
 
   .collapse__container {
     display: flex;
-    justify-content: space-between; /* Pour espacer les collapses à gauche et à droite */
-    align-items: flex-start; /* Aligne les collapses en haut */
+    justify-content: space-between;
+    align-items: flex-start;
     gap: 76px;
 }
 

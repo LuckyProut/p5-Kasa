@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './gallery.scss';
+import '../../style/gallery.scss';
 import left from "../../img/left.png";
 import right from "../../img/right.png";
 

@@ -1,11 +1,10 @@
-$width-card: 340px;
-$height-card: 340px;
+@import 'variables';
 
 .location-background {
    display: flex;
    flex-wrap: wrap;
    justify-content: space-evenly;
-   background-color: #F6F6F6;
+   background-color: #fafafa;
    border-radius: 30px;
    padding: 35px 0;
    margin: 50px 0;
@@ -45,7 +44,7 @@ $height-card: 340px;
        position: relative;
        width: 300px;
        height: 52px;
-       font-family: Montserrat;
+       font-family: $font-family;
        bottom: 395px;
        left: 20px;
      }

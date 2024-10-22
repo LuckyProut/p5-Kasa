@@ -1,3 +1,5 @@
+@import 'variables';
+
 .header-container {
   max-width: 1240px; 
   max-height: 68px;
@@ -7,6 +9,7 @@
   justify-content: space-between;
   padding-bottom: 45px;
 
+  
   img {
     height: 68px;
   }
@@ -20,7 +23,7 @@
       color: black;
       margin: auto 25px;
       text-decoration: none;
-      font-family: Montserrat;
+      font-family: $font-family;
       font-weight: 500;
       font-size: 24px;
 

@@ -1,9 +1,13 @@
+@import 'variables';
+
 #banner {
   height: 223px;
   width: 1240px;
   border-radius: 10px;
   display: flex;
   justify-content: center;
+  
+
 
   img {
     height: 100%;
@@ -17,7 +21,7 @@
     position: absolute;
     top: 200px;
     font-size: 48px;
-    font-family: Montserrat;
+    font-family: $font-family;
     font-weight: 700;
     color: white;
     text-shadow: 
@@ -27,3 +31,4 @@
       1px 1px 0px black;
   }
 }
+

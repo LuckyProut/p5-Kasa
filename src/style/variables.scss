@@ -1,0 +1,30 @@
+$breakpoints: (
+  small: 350px,
+  medium: 768px,
+  large: 992px,
+  xlarge: 1200px,
+);
+
+$breakpoint-mobile: 375px;
+
+$wmin: 375px;
+$wmax: 768px;
+
+$primary-color: #FF6060;
+$background-color: #F6F6F673;
+$text-color-white: white;
+$text-color-black: black;
+
+$text-color: black;
+$font-family: 'Montserrat';
+
+$background-color-black: #000000;
+$background-color-white: white;
+
+
+$width-card: 340px;
+$height-card: 340px;
+
+$gallery-margin: 20px;
+$image-height: 415px;
+$button-size: 10px;

@@ -1,5 +1,5 @@
 import React from 'react';
-import './host.scss'
+import '../../style/host.scss'
 
 function Host(props) {
     return (

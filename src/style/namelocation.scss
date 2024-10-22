@@ -1,3 +1,5 @@
+@import 'variables';
+
 .announcement__container {
     height: 77px;
 }
@@ -5,15 +7,15 @@
 .announcement__title {
     margin: 0;
     font-size: 36px;
-    font-family: Montserrat;
-    color: #FF6060;
+    font-family: $font-family;
+    color: $primary-color;
     height: 51px;
     font-weight: 500;
 }
 
 .announcement__location {
     margin: 0;
-    font-family: Montserrat;
+    font-family: $font-family;
     font-size: 18px;
     font-weight: 500;
 }
