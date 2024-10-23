@@ -1,6 +1,7 @@
 import React from 'react';
 import starActive from "../../img/staractive.png";
 import starInactive from "../../img/starinactive.png";
+import '../../style/rating.scss';
 
 
 function Rating(props) {

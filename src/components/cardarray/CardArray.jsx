@@ -1,10 +1,11 @@
 import React from 'react';
 import Card from '../../components/card/card';
 import Data from '../../data/data.json'
+import '../../style/cardarray.scss'
 
 const CardArray = ({ data }) => {
     return (
-        <section className='location-background'>
+        <section className='location__background'>
         {Data.map((locationData) => (
           <Card
             key={locationData.id}

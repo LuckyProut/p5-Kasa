@@ -7,6 +7,9 @@
     width: 167px;
     height: 64px;
     gap: 10px;
+    @media screen and (max-width: 375px) {
+        width: auto;
+      }
 } 
 
 .host__name {
@@ -20,6 +23,12 @@
     font-size: 18px;
     font-weight: 500;
     line-height: 25px;
+    @media screen and (max-width: 375px) {
+    font-size: 12px;
+    width: 60px;
+    line-height: 17px;
+    align-items: center;
+    }
 }
 
 .host__picture {
@@ -27,4 +36,8 @@
     height: 64px;
     border-radius: 100%;
     object-fit: cover;
+    @media screen and (max-width: 375px) {
+    width: 32px;
+    height: 32px;
+    }
 }

@@ -2,6 +2,11 @@
 
 .tag__container {
     display: flex;
+    @media screen and (max-width: 375px) {
+        flex-wrap: wrap;
+        margin: 20px 20px 10px 20px;
+        gap: 10px
+      }
     &__button {
         display: flex;
         align-items: center;
@@ -15,6 +20,13 @@
         min-width: 115px;
         border-radius: 10px;
         margin-right: 10px;
-        padding: 2px 10px 0 10px;
+        padding: 0px 10px 0 10px;
+        text-align: center;
+        @media screen and (max-width: 375px) {
+            font-size: 10px;
+            min-width: 84px;
+            max-width: 84px;
+            margin: 0;
+          }
     }
   }
