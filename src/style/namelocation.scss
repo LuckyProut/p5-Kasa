@@ -2,7 +2,10 @@
 
 .announcement__container {
     height: 77px;
-    
+    @media screen and (max-width: 375px) {
+        height: auto;
+        margin-bottom: 20px;
+      }
 }
 
 .announcement__title {
@@ -16,7 +19,7 @@
     @media screen and (max-width: 375px) {
         font-size: 18px;
         height: auto;
-        margin: 0 20px;
+        margin: 0px 20px 5px;
       }
 }
 
@@ -27,6 +30,6 @@
     font-weight: 500;
     @media screen and (max-width: 375px) {
         font-size: 14px;
-        margin: 10px 20px;
+        margin: 0px 20px;
       }
 }
