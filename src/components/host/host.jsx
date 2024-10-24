@@ -5,9 +5,9 @@ function Host(props) {
     return (
       <>
     <div className='host__container'>
-        <p className="host__name">{props.name}</p>
+        <p className="host__container__name">{props.name}</p>
         <img
-          className="host__picture"
+          className="host__container__picture"
           src={props.picture}
           alt="Photo du propriétaire"
         />

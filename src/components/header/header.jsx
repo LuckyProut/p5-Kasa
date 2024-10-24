@@ -5,11 +5,11 @@ import { NavLink } from "react-router-dom";
 
 function Header() {
     return(
-        <header id="header" className="header-container">
+        <header id="header" className="header__container">
             <NavLink to="/"><img src={logoHeader} alt="Logo"/></NavLink>
             <nav>
-                <NavLink to="/" className="lien-site lien-menu">Accueil</NavLink>
-                <NavLink to="/About" className="lien-site lien-menu">A propos</NavLink>
+                <NavLink to="/" className="header__container__site lien-menu">Accueil</NavLink>
+                <NavLink to="/About" className="header__container__site lien-menu">A propos</NavLink>
             </nav>
         </header>
     );

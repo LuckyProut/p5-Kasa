@@ -6,7 +6,7 @@
     height: 270px;
     }
 
-  .location__card__figure {
+  &__figure {
     cursor: pointer;
     width: $width-card;
     height: $height-card;
@@ -14,8 +14,7 @@
     transition: 0.2s;
     @media screen and (max-width: 375px) {  
     height: 255px;
-    
-      }
+    }
  
      &:hover {
       scale: 1.05;

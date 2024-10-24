@@ -1,14 +1,14 @@
 .announcement {
-  .announcement__details {
+  &__details {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-
     @media screen and (max-width: 375px) {
       flex-direction: column; 
     }
+  }
 
-    .announcement__left {
+    &__left {
       gap: 30px;
       display: flex;
       flex-direction: column;
@@ -19,7 +19,7 @@
       }
     }
 
-    .announcement__right {
+    &__right {
       display: flex;
       flex-direction: column;
       align-items: flex-end; 
@@ -48,14 +48,16 @@
     gap: 0;
     margin: 0 10px;
     }
+
+    ul {
+      list-style: none;
+    }
   }
-}
 
-ul {
-  list-style: none;
-}
 
-.equipments-content {
+
+
+.equipments__content {
   text-align: start;
 }
 

@@ -1,6 +1,6 @@
 @import 'variables';
 
-.header-container {
+.header__container {
   max-width: 1240px; 
   max-height: 68px;
   margin: 0 auto;   
@@ -13,7 +13,6 @@
     padding: 0px;
   }
 
-  
   img {
     height: 68px;
     @media screen and (max-width: 375px) {
@@ -25,8 +24,8 @@
     justify-content: flex-end;
     display: flex;
     width: 100%;
-
-    .lien-site {
+}
+    &__site {
       color: black;
       margin: auto 25px;
       text-decoration: none;
@@ -44,7 +43,6 @@
       &.active {
         border-bottom: 1px solid black;
       }
-    }
   }
 }
     

@@ -6,9 +6,9 @@
         height: auto;
         margin-bottom: 20px;
       }
-}
 
-.announcement__title {
+
+&__title {
     
     margin: 0;
     font-size: 36px;
@@ -23,7 +23,7 @@
       }
 }
 
-.announcement__location {
+&__location {
     margin: 0;
     font-family: $font-family;
     font-size: 18px;
@@ -32,4 +32,5 @@
         font-size: 14px;
         margin: 0px 20px;
       }
+  }
 }

@@ -6,7 +6,7 @@
     align-items: center;
     gap: 100px;
 
-    .error__number {
+    &__number {
         font-size: 288px;
         font-weight: 700;
         color: $primary-color;
@@ -18,7 +18,7 @@
           }
     }
 
-    .error__text {
+    &__text {
         color: $primary-color;
         font-family: $font-family;
         font-size: 36px;
@@ -33,7 +33,7 @@
           }
     }
 
-    .error__home {
+    &__home {
         color: $text-color;
         font-family: $font-family;
         font-size: 18px;

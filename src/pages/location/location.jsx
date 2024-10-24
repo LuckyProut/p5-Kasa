@@ -47,7 +47,7 @@ function Annonces() {
                     <p>{description}</p>
                 </Collapse>
                 <Collapse className='collapse__box collapse--small' title="Équipements">
-                    <ul className="equipments-content">
+                    <ul className="equipments__content">
                         {equipments.map((equipment, index) => (
                         <li key={index}>{equipment}</li>
                         ))}
