@@ -1,4 +1,5 @@
 @import 'variables';
+@import 'mixin';
 
 .gallery {
   position: relative;
@@ -6,8 +7,8 @@
   justify-content: center;
   align-items: center;
   margin: $gallery-margin 0;
-  @media screen and (max-width: 375px) {
-    max-width: 335px;
+  @include mobile {
+    max-width: $full-width-mobile;
     margin: 20px;
   }
   
@@ -17,7 +18,7 @@
     object-fit: cover;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    @media screen and (max-width: 375px) {
+    @include mobile {
       max-height: 255px;
     }
   }
@@ -30,14 +31,14 @@
 
     &--left {
       left: $button-size;
-      @media screen and (max-width: 375px) {
+      @include mobile {
         max-height: 24px;
       }
     }
 
     &--right {
       right: $button-size; 
-      @media screen and (max-width: 375px) {
+      @include mobile {
         max-height: 24px;
       }
     }
@@ -45,8 +46,8 @@
 
   .image__counter {
     margin-top: 10px; 
-    font-size: 18px; 
-    font-weight: 500;
+    font-size: $font-size-18; 
+    font-weight: $font-weight-500;
     font-family: $font-family;
     color: $text-color-white; 
     text-align: center; 

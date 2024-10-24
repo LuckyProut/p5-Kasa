@@ -1,4 +1,7 @@
-@media screen and (max-width: 375px) {
+@import 'variables';
+@import 'mixin';
+
+@include mobile {
     .star {
         width: 16px;
         height: 16px; 

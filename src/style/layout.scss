@@ -1,7 +1,10 @@
+@import 'variables';
+@import 'mixin';
+
 main {
     margin: auto;
     width: 1240px;
-    @media screen and (max-width: 375px) {
+    @include mobile {
         width: 100%;
       }
   }

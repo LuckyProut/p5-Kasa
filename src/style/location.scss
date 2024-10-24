@@ -1,9 +1,12 @@
+@import 'variables';
+@import 'mixin';
+
 .announcement {
   &__details {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    @media screen and (max-width: 375px) {
+    @include mobile {
       flex-direction: column; 
     }
   }
@@ -13,7 +16,7 @@
       display: flex;
       flex-direction: column;
 
-      @media screen and (max-width: 375px) {
+      @include mobile {
         flex-wrap: wrap;
         gap: 0;
       }
@@ -26,14 +29,14 @@
       text-align: right;
       gap: 30px;
 
-      @media screen and (max-width: 375px) {
+      @include mobile {
         flex-direction: row-reverse;
         align-items: flex-start; 
         text-align: left; 
         justify-content: space-between;
         align-items: center;
-        margin: 0 20px;
-        min-width: 335px;
+        margin: $margin-mobile;
+        min-width: $full-width-mobile;
       }
     }
   }
@@ -43,7 +46,7 @@
     justify-content: space-between;
     align-items: flex-start;
     gap: 76px;
-    @media screen and (max-width: 375px) {
+    @include mobile {
     flex-direction: column;
     gap: 0;
     margin: 0 10px;
@@ -53,9 +56,6 @@
       list-style: none;
     }
   }
-
-
-
 
 .equipments__content {
   text-align: start;
