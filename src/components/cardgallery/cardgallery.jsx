@@ -3,7 +3,7 @@ import Card from '../../components/card/card';
 import Data from '../../data/data.json'
 import '../../style/cardarray.scss'
 
-const CardArray = ({ data }) => {
+const CardGallery = () => {
     return (
         <section className='location__background'>
         {Data.map((locationData) => (
@@ -18,4 +18,4 @@ const CardArray = ({ data }) => {
     );
   };
 
-  export default CardArray;
+  export default CardGallery;

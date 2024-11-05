@@ -4,8 +4,7 @@ import starInactive from "../../img/starinactive.png";
 import '../../style/rating.scss';
 
 
-function Rating(props) {
-    const rating = props.rating;
+function Rating({rating}) {
     const notes = [1, 2, 3, 4, 5];
     return (
       <div className="rating__contenair">

@@ -2,7 +2,6 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import { useEffect } from 'react';
-// import { Link } from 'react-router-dom'
 import Data from '../../data/data.json';
 import Collapse from '../../components/collapse/collapse';
 import NameLocation from '../../components/namelocation/namelocation';

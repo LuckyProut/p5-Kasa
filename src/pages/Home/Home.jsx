@@ -1,7 +1,7 @@
 import React from 'react';
 import Banner from '../../components/banner/banner';
 import bannerImg from "../../img/bannerImg.png"
-import CardArray from '../../components/cardarray/CardArray';
+import CardGallery from '../../components/cardgallery/cardgallery';
 import '../../style/home.scss';
 
 const Home = () => {
@@ -9,12 +9,12 @@ const Home = () => {
     <><Banner 
         picture={bannerImg}
         title={<>
-          Chez vous,<br className="mobile-br" />
+          Chez vous, <br className="mobile-br" />
           partout et ailleurs
       </>
       }
         />
-      <CardArray /></>
+      <CardGallery /></>
   );
 };
 

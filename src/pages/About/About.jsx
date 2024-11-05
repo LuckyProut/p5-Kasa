@@ -10,7 +10,7 @@ const About = () => {
   return (
     <>
       <Banner picture={bannerImg} />
-      <section className="collapses-container">
+      <section className="collapses__container__about">
         {Data.map((collapse) => (
           <Collapse title={collapse.title} key={collapse.title}>
             <p>{collapse.content}</p>

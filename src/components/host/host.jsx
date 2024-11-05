@@ -1,15 +1,15 @@
 import React from 'react';
 import '../../style/host.scss'
 
-function Host(props) {
+function Host({name, picture}) {
     return (
       <>
     <div className='host__container'>
-        <p className="host__container__name">{props.name}</p>
+        <p className="host__container__name">{name}</p>
         <img
           className="host__container__picture"
-          src={props.picture}
-          alt="Photo du propriétaire"
+          src={picture}
+          alt="propriétaire"
         />
     </div>
       </>
