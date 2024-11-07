@@ -14,9 +14,9 @@ const Collapse = ({ title, children }) => {
 
   return (
     <div className="collapse">
-      <button className="collapse__button" onClick={toggleCollapse}>
+      <button className="collapse__button">
         {title}
-        <img src={icon} className={isOpen ? 'rotated' : ''} alt="collapse icon" />
+        <img src={icon} className={isOpen ? 'rotated' : ''} alt="collapse icon" onClick={toggleCollapse}/>
       </button>
       <div className={`collapse__content ${isOpen ? 'show' : ''}`}>
         {children}
