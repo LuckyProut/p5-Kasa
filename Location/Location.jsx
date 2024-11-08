@@ -2,13 +2,13 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import { useEffect } from 'react';
-import Data from '../../data/data.json';
-import Collapse from '../../components/collapse/collapse';
-import NameLocation from '../../components/namelocation/namelocation';
-import Rating from '../../components/rating/rating';
-import Host from '../../components/host/host';
-import Tags from '../../components/tag/tag';
-import Gallery from '../../components/gallery/gallery';
+import Data from '../src/data/data.json';
+import Collapse from '../src/components/collapse/collapse';
+import NameLocation from '../src/components/namelocation/namelocation';
+import Rating from '../src/components/rating/rating';
+import Host from '../src/components/host/host';
+import Tags from '../src/components/tag/tag';
+import Gallery from '../src/components/gallery/gallery';
 import '../../style/location.scss';
 
 function Annonces() {
