@@ -4,7 +4,7 @@ import Layout from "./components/layout";
 import Home from './pages/Home/Home'; 
 import About from './pages/About/About'; 
 import NotFound from './pages/NotFound/NotFound'; 
-import Annonces from '../Location/Location';
+import Annonces from './pages/Location/Location';
 
 const AppRouter = () => {
   return (
