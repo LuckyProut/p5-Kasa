@@ -11,7 +11,6 @@ import Tags from '../../components/tag/tag';
 import Gallery from '../../components/gallery/gallery';
 import '../../style/location.scss';
 
-
 function Annonces() {
     const { id } = useParams(); 
     const location = Data.find(loc => loc.id === id);
